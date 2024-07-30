@@ -1,5 +1,5 @@
 function encriptar() {
-    let texto = document.getElementById("Texto").value; // Cambiar "texto" a "Texto"
+    let texto = document.getElementById("Texto").value; 
     let tituloMensaje = document.getElementById("titulo-mensaje");
     let parrafo = document.getElementById("parrafo");
     let muñeco = document.getElementById("muñeco");
@@ -12,7 +12,7 @@ function encriptar() {
         .replace(/u/gi, "ufat");
 
     if (texto.length != 0) {
-        document.getElementById("Texto").value = textoCifrado; // Cambiar "texto" a "Texto"
+        document.getElementById("Texto").value = textoCifrado; 
         tituloMensaje.textContent = "Texto encriptado con éxito";
         parrafo.textContent = "";
         muñeco.src = "./assets/encriptado.jpg";
@@ -25,7 +25,7 @@ function encriptar() {
 }
 
 function desencriptar() {
-    let texto = document.getElementById("Texto").value; // Cambiar "texto" a "Texto"
+    let texto = document.getElementById("Texto").value; 
     let tituloMensaje = document.getElementById("titulo-mensaje");
     let parrafo = document.getElementById("parrafo");
     let muñeco = document.getElementById("muñeco");
